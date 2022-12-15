@@ -1,0 +1,146 @@
+/*- @font-face Start ----------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+@font-face{
+  font-family: 'Viga';
+  src: url('fonts/viga.ttf')  format('truetype');
+}
+
+/*------------------------------------------------------------------------ @font-face End -*/
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+	font-family: 'Prompt', sans-serif;
+}
+
+
+html, body{
+	scroll-behavior: smooth;
+	background-color: #dcdcdc;
+	color: #202020;
+}
+
+
+/*- header Start ---------- #e0e0e0 ----------------------------------------------------------------*/
+
+.header{
+	height: 90vh;
+	background-color: #f8f8f8;
+  background-size: cover;
+}
+/*- Navigation Menu Start -----------------------------------------------------------------*/
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1f59ec;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/*------------------------------------------------------------------- Navigation Menu End -*/
+
+/*---------------------------------------------------------------------------- header End -*/
+
+
+/*- deals Start ---------------------------------------------------------------------------*/
+.deals{
+	padding: 10px 20px;
+	text-align: center;
+	background: #dcdcdc;
+	color: #000;
+}
+
+.deals h1{
+	font-weight: bold;
+	margin: 1% 0px -1% 0%;
+}
+/*----------------------------------------------------------------------------- deals End -*/
+
+
+/*- top-cat Start -------------------------------------------------------------------------*/
+.top-cat{
+	padding: 10px 20px;
+	text-align: center;
+}
+/*--------------------------------------------------------------------------- top-cat End -*/
+
+
+/*- footer Start --------------------------------------------------------------------------*/
+.footer{
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+	background: #141414;
+}
+/*---------------------------------------------------------------------------- footer End -*/
+
+
+/*- newsletter Start ----------------------------------------------------------------------*/
+.newsletter{
+	padding: 25px 0px;
+	text-align: center;
+	height: 20vh;
+	background: #1d293c;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box p{
+	font-size: 20px;
+	margin: 0px 0px 20px 0px;
+	color: #fff;
+}
+
+.form-box input{
+	padding: 15px 15px 15px 15px;
+	border: 1px solid #000;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.form-box button{
+	background: #1f59ec;
+	color: #fff;
+	padding: 15px 15px 15px 15px;
+	border: 1px solid #1f59ec;
+	border-radius: 0px 15px 15px 0px;
+	cursor: pointer;
+}
+/*- newsletter End ------------------------------------------------------------------------*/
+
+
+/*- Mobile Compatibility Start ------------------------------------------------------------*/
+/*-------------------------------------------------------------- Mobile Compatibility End -*/

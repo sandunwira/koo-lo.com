@@ -1,0 +1,115 @@
+/*- @font-face Start ----------------------------------------------------------------------*/
+
+@font-face{
+  font-family: 'Viga';
+  src: url('fonts/viga.ttf')  format('truetype');
+}
+
+/*------------------------------------------------------------------------ @font-face End -*/
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+	font-family: 'Viga', sans-serif;
+}
+
+
+html, body{
+	scroll-behavior: smooth;
+	background-color: #dcdcdc;
+	color: #202020;
+}
+
+
+/*- header Start --------------------------------------------------------------------------*/
+
+.header{
+	height: 100vh;
+	background-color: #e0e0e0;
+  background-size: cover;
+}
+/*- Navigation Menu Start -----------------------------------------------------------------*/
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #202020;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1f59ec;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+/*------------------------------------------------------------------- Navigation Menu End -*/
+
+/*---------------------------------------------------------------------------- header End -*/
+
+.btn{
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 3px solid #1f59ec;
+	border-radius: 15px;
+	color: #1f59ec;
+	background: transparent;
+	transition: 0.5s;
+}
+
+.btn:hover{
+	color: #e0e0e0;
+	background: #1f59ec;
+	transition: 0.5s;
+}
+
+.btn:hover::after{
+	background: transparent;
+	transition: 0.5s;
+}
+
+
+.error{
+	text-align: center;
+	color: #202020;
+}
+
+.error h1{
+	font-size: calc(17vw + 40px);
+	letter-spacing: -17px;
+	margin-top: 3%;
+	margin-bottom: -4%;
+}
+
+.error p{
+  font-size: 20px;
+  margin: 0px 0px 4% 0px;
+  font-weight: bold;
+}
