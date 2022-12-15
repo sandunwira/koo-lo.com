@@ -126,18 +126,27 @@ nav img{
 }
 
 .form-box input{
-	padding: 15px 15px 15px 15px;
-	border: 1px solid #000;
-	border-radius: 15px 0px 0px 15px;
+	padding: 15px 20px 15px 20px;
+	border: 1px solid #fff;
+	border-radius: 25px 0px 0px 25px;
 }
 
 .form-box button{
+	font-weight: bold;
 	background: #1f59ec;
 	color: #fff;
-	padding: 15px 15px 15px 15px;
+	margin: 0px 0px 0px -6px;
+	padding: 15px 20px 15px 20px;
 	border: 1px solid #1f59ec;
-	border-radius: 0px 15px 15px 0px;
+	border-radius: 0px 25px 25px 0px;
 	cursor: pointer;
+	transition: 0.5s;
+}
+.form-box button:hover{
+	background: #4372ea;
+	color: #fff;
+	border: 1px solid #4372ea;
+	transition: 0.5s;
 }
 /*- newsletter End ------------------------------------------------------------------------*/
 
