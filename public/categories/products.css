@@ -1,0 +1,175 @@
+/*- @import Start -------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+/*--------------------------------------------------------------------------- @import End -*/
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+	font-family: 'Prompt', sans-serif;
+}
+
+html, body{
+	scroll-behavior: smooth;
+	background-color: #dcdcdc;
+	color: #202020;
+}
+
+/*- men and women header Start ------------------------------------------------------------*/
+.m-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff90, #ffffff90), url('/images/mens.jpg');
+	background-size: cover;
+	text-align: center;
+}
+.m-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+
+.w-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff90, #ffffff90), url('/images/womens.jpg');
+	background-size: cover;
+	text-align: center;
+}
+.w-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*- Navigation Menu Start -----------------------------------------------------------------*/
+nav{
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 150px;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #1f59ec;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+/*------------------------------------------------------------------- Navigation Menu End -*/
+/*-------------------------------------------------------------- men and women header End -*/
+
+
+/*- products Start ------------------------------------------------------------------------*/
+.products{
+	padding: 15px 20px;
+	color: #000;
+}
+.products h1{
+	margin: 10px 0px 0px 20px;
+}
+
+.items{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+	display: flex;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+	margin: 10px 20px;
+	height: 325px;
+	width: 250px;
+	border-radius: 15px;
+	color: #000;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.card:hover{
+	box-shadow: 0 0 2px #424242, 0 0 15px #424242;
+	transition: 0.3s;
+}
+
+.card button{
+	margin: 5px 5px;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #1f59ec;
+	background: transparent;
+	border: 2px solid #1f59ec;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.card button:hover{
+	color: #fff;
+	background: #1f59ec;
+	transition: 0.5s;
+}
+
+.card img{
+	width: 160px;
+	height: 160px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.card-content{
+	padding: 10px;
+}
+
+.see-more{
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	margin: 10px 20px;
+	height: 300px;
+	width: 225px;
+	background-color: transparent;
+}
+.see-more a{
+	color: #1f59ec;
+	text-decoration: none;
+	font-weight: bold;
+}
+.see-more a:hover{
+	color: #1443b8;
+}
+/*-------------------------------------------------------------------------- products End -*/
+
+
+/*- footer Start --------------------------------------------------------------------------*/
+.footer{
+	text-align: center;
+	margin: 20px 0px 0px 0px;
+	padding: 15px;
+	color: #fff;
+	background: #141414;
+}
+/*---------------------------------------------------------------------------- footer End -*/

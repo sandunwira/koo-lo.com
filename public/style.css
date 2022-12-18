@@ -1,13 +1,13 @@
-/*- @font-face Start ----------------------------------------------------------------------*/
+/*- Importing Fonts Start -----------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
-@font-face{
-  font-family: 'Viga';
-  src: url('fonts/viga.ttf')  format('truetype');
+@font-face {
+  font-family: 'OriginTech';
+  src: url('/fonts/Origin-Tech.ttf')  format('truetype');
 }
 
-/*------------------------------------------------------------------------ @font-face End -*/
+/*------------------------------------------------------------------- Importing Fonts End -*/
 
 
 *{
@@ -29,8 +29,24 @@ html, body{
 
 .header{
 	height: 90vh;
-	background-color: #f8f8f8;
+	background-image: linear-gradient(#ffffff90, #ffffff90), url('/images/banner.jpg');
   background-size: cover;
+	text-align: center;
+}
+
+.header-txt{
+	margin-top: 25vh;
+	font-weight: bold;
+}
+
+.header-txt h1{
+	font-family: 'OriginTech', sans-serif;;
+	color: #1f59ec;
+	font-size: 100px;
+}
+
+.header-txt h2{
+	font-size: 30px;
 }
 /*- Navigation Menu Start -----------------------------------------------------------------*/
 nav{
@@ -40,6 +56,7 @@ nav{
     align-items: center;
 }
 nav img{
+		display: none;
     width: 150px;
 }
 .nav-links{
@@ -92,20 +109,67 @@ nav img{
 
 /*- top-cat Start -------------------------------------------------------------------------*/
 .top-cat{
-	padding: 10px 20px;
 	text-align: center;
+	padding: 15px 20px 40px 20px;
+	color: #000;
+}
+.top-cat h1{
+	margin: 10px 0px 10px 0px;
+}
+
+.cat-items{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-card{
+	display: flex;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+	margin: 10px 20px;
+	height: 350px;
+	width: 250px;
+	border-radius: 15px;
+	color: #000;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.cat-card:hover{
+	box-shadow: 0 0 2px #424242, 0 0 15px #424242;
+	transition: 0.3s;
+}
+
+.cat-card button{
+	margin: 5px 5px 10px 5px;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #1f59ec;
+	background: transparent;
+	border: 2px solid #1f59ec;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.cat-card button:hover{
+	color: #fff;
+	background: #1f59ec;
+	transition: 0.5s;
+}
+
+.cat-card img{
+	width: 225px;
+	height: 245px;
+	border: 1px solid #000;
+	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
+}
+
+.cat-card-content{
+	padding: 10px;
 }
 /*--------------------------------------------------------------------------- top-cat End -*/
-
-
-/*- footer Start --------------------------------------------------------------------------*/
-.footer{
-	text-align: center;
-	padding: 15px;
-	color: #fff;
-	background: #141414;
-}
-/*---------------------------------------------------------------------------- footer End -*/
 
 
 /*- newsletter Start ----------------------------------------------------------------------*/
@@ -124,13 +188,11 @@ nav img{
 	margin: 0px 0px 20px 0px;
 	color: #fff;
 }
-
 .form-box input{
 	padding: 15px 20px 15px 20px;
 	border: 1px solid #fff;
-	border-radius: 25px 0px 0px 25px;
+	border-radius: 20px 0px 0px 20px;
 }
-
 .form-box button{
 	font-weight: bold;
 	background: #1f59ec;
@@ -138,7 +200,7 @@ nav img{
 	margin: 0px 0px 0px -6px;
 	padding: 15px 20px 15px 20px;
 	border: 1px solid #1f59ec;
-	border-radius: 0px 25px 25px 0px;
+	border-radius: 0px 20px 20px 0px;
 	cursor: pointer;
 	transition: 0.5s;
 }
@@ -148,7 +210,17 @@ nav img{
 	border: 1px solid #4372ea;
 	transition: 0.5s;
 }
-/*- newsletter End ------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------ newsletter End -*/
+
+
+/*- footer Start --------------------------------------------------------------------------*/
+.footer{
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+	background: #141414;
+}
+/*---------------------------------------------------------------------------- footer End -*/
 
 
 /*- Mobile Compatibility Start ------------------------------------------------------------*/
