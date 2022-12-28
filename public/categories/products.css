@@ -17,9 +17,11 @@ html, body{
 }
 
 /*- men and women header Start ------------------------------------------------------------*/
+
+/*- mens Start ---------------------------------------------------------------------*/
 .m-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff90, #ffffff90), url('/images/mens.jpg');
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/mens.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -28,10 +30,51 @@ html, body{
 	font-size: 75px;
 	font-weight: bold;
 }
+/*- hoodies Start ------------------------------------------------------------*/
+.hoodies-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/hoodies/hoodies-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.hoodies-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*-------------------------------------------------------------- hoodies End -*/
+/*- trousers Start -----------------------------------------------------------*/
+.trousers-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/trousers/trousers-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.trousers-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*------------------------------------------------------------- trousers End -*/
+/*- tshirts Start ------------------------------------------------------------*/
+.tshirts-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/tshirts/tshirts-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.tshirts-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*-------------------------------------------------------------- tshirts End -*/
+/*----------------------------------------------------------------------- mens End -*/
 
+/*- womens Start -------------------------------------------------------------------*/
 .w-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff90, #ffffff90), url('/images/womens.jpg');
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/womens.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -40,6 +83,60 @@ html, body{
 	font-size: 75px;
 	font-weight: bold;
 }
+/*- jeans Start --------------------------------------------------------------*/
+.jeans-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/jeans/jeans-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.jeans-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*---------------------------------------------------------------- jeans End -*/
+/*- dresses Start ------------------------------------------------------------*/
+.dresses-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/dresses/dresses-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.dresses-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*-------------------------------------------------------------- dresses End -*/
+/*- skirts Start -------------------------------------------------------------*/
+.skirts-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/skirts/skirts-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.skirts-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*--------------------------------------------------------------- skirts End -*/
+/*- tops Start ---------------------------------------------------------------*/
+.tops-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/tops/tops-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.tops-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*----------------------------------------------------------------- tops End -*/
+/*--------------------------------------------------------------------- womens End -*/
+
 /*- Navigation Menu Start -----------------------------------------------------------------*/
 nav{
   display: flex;
@@ -79,6 +176,7 @@ nav img{
   width: 100%;
 }
 /*------------------------------------------------------------------- Navigation Menu End -*/
+
 /*-------------------------------------------------------------- men and women header End -*/
 
 
@@ -146,30 +244,314 @@ nav img{
 
 .see-more{
 	display: flex;
-  justify-content: center;
+	text-align: center;
 	align-items: center;
+  justify-content: center;
 	margin: 10px 20px;
 	height: 300px;
 	width: 225px;
 	background-color: transparent;
 }
+.see-more-content{
+	padding: 10px;
+}
 .see-more a{
 	color: #1f59ec;
 	text-decoration: none;
 	font-weight: bold;
+	transition: 0.3s;
 }
 .see-more a:hover{
 	color: #1443b8;
+	transition: 0.3s;
 }
 /*-------------------------------------------------------------------------- products End -*/
+
+/*- products cards Start ------------------------------------------------------------------*/
+.products-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: linear-gradient(#dcdcdc, #dcdcdc);
+}
+.products-card{
+	margin: 10px 25px;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background: #ffff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.products-card:hover{
+  height: 450px;
+}
+
+.products-card a{
+	text-decoration: none;
+}
+
+.imgBx{
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+  transform: translateX(-50%);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.35);
+}
+.imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products-card:hover .imgBx{
+  width: 250px;
+  height: 250px;
+}
+.products-card .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+.products-card .content .details{
+  padding: 40px;
+  width: 100%;
+  transition: 0.5s;
+  text-align: center;
+  transform: translateY(165px);
+}
+.products-card:hover .content .details{
+  transform: translateY(25px);
+}
+
+.products-card .content .details h2{
+  font-size: 1.25em;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  line-height: 1.2em;
+}
+.products-card .content .details .data{
+  margin: 5px 0px 5px 0px;
+	font-weight: bold;
+}
+.products-card .content .details .data h3{
+  font-size: 1em;
+  color: #000000;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.hidden-btn{
+	visibility: hidden;
+}
+
+.products-card .content .details .actionbtn button{
+	margin: 5px 0px;
+}
+
+.products-card .content .details button .ebay{
+  color: #0064D2;
+	transition: 0.5s;
+}
+.products-card .content .details button:hover .ebay{
+  color: #fff;
+	transition: 0.5s;
+}
+
+.products-card .content .details button .ali{
+  color: #FF6A00;
+	transition: 0.5s;
+}
+.products-card .content .details button:hover .ali{
+  color: #fff;
+	transition: 0.5s;
+}
+
+.products-card .content .details button .amazon{
+  color: #FF9900;
+	transition: 0.5s;
+}
+.products-card .content .details button:hover .amazon{
+  color: #fff;
+	transition: 0.5s;
+}
+
+.products-card .content .details button{
+	margin: 10px 0px;
+	padding: 7px 15px;
+  border: 2px solid #1f59ec;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #1f59ec;
+  cursor: pointer;
+	transition: 0.5s;
+}
+.products-card .content .details button:hover{
+	scale: 1.05;
+	color: #fff;
+	background: #1f59ec;
+	box-shadow: 0 0 5px #42424290;
+	transition: 0.5s;
+}
+/*-------------------------------------------------------------------- products cards End -*/
 
 
 /*- footer Start --------------------------------------------------------------------------*/
 .footer{
 	text-align: center;
-	margin: 20px 0px 0px 0px;
 	padding: 15px;
 	color: #fff;
 	background: #141414;
 }
 /*---------------------------------------------------------------------------- footer End -*/
+
+
+/*- Mobile Compatibility Start ------------------------------------------------------------*/
+
+@media screen and (max-width: 912px) {
+
+	nav img{
+		width: 100px;
+	}
+	.nav-links ul li a{
+  	color: #000;
+  	text-decoration: none;
+  	font-size: 12px;
+	}
+	
+	.m-header{
+		height: 30vh;
+	}
+	.m-header h1{
+		margin-top: 5vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.hoodies-header{
+		height: 30vh;
+	}
+	.hoodies-header h1{
+		margin-top: 5vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.trousers-header{
+		height: 30vh;
+	}
+	.trousers-header h1{
+		margin-top: 5vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.tshirts-header{
+		height: 30vh;
+	}
+	.tshirts-header h1{
+		margin-top: 5vh;
+  	font-size: calc(10vw + 5px);
+	}
+	
+	.w-header{
+		height: 30vh;
+	}
+	.w-header h1{
+		margin-top: 5vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.jeans-header{
+		height: 30vh;
+	}
+	.jeans-header h1{
+		margin-top: 5vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.dresses-header{
+		height: 30vh;
+	}
+	.dresses-header h1{
+		margin-top: 5vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.skirts-header{
+		height: 30vh;
+	}
+	.skirts-header h1{
+		margin-top: 5vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.tops-header{
+		height: 30vh;
+	}
+	.tops-header h1{
+		margin-top: 5vh;
+  	font-size: calc(10vw + 5px);
+	}
+	
+	.products{
+		height: 20%;
+		padding: 0px 0px;
+	}
+	.products h1{
+		text-align: center;
+		font-size: 25px;
+		margin: 5px 0px 0px 0px;
+	}
+	
+	.items{
+		display: block;
+		width: 100%;
+		height: 30%;
+		white-space: nowrap;    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; 
+		padding: 5px 0px;
+	}
+	.card{
+    float: none;
+    display: inline-block;
+		height: auto;
+		width: auto;
+	}
+	.card img {
+    width: 175px;
+    height: 160px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    object-fit: cover;
+	}
+	.card button{
+		font-size: 10px;
+	}
+	.see-more{
+		float: none;
+		display: inline-block;
+		height: auto;
+		width: auto;
+	}
+
+	.products-card{
+		margin: 10vh 0px 0px 0px;
+	}
+
+	.products-row{
+		display: flex;
+    flex-direction: column;
+	}
+}
+
+/*-------------------------------------------------------------- Mobile Compatibility End -*/

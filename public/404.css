@@ -23,8 +23,8 @@ html, body{
 /*- header Start --------------------------------------------------------------------------*/
 
 .header{
-	height: 100vh;
-	background-color: #e0e0e0;
+	height: 93vh;
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/404.webp');
   background-size: cover;
 }
 /*- Navigation Menu Start -----------------------------------------------------------------*/
@@ -74,16 +74,17 @@ nav img{
 .btn{
 	text-decoration: none;
 	padding: 10px 20px;
-	border: 3px solid #1f59ec;
+	border: 3px solid #000;
 	border-radius: 15px;
-	color: #1f59ec;
-	background: transparent;
+	color: #fff;
+	background: #000;
 	transition: 0.5s;
 }
 
 .btn:hover{
 	color: #e0e0e0;
 	background: #1f59ec;
+	border: 3px solid #1f59ec;
 	transition: 0.5s;
 }
 
@@ -94,7 +95,7 @@ nav img{
 
 
 .error{
-	margin: -2% 0px 0px 0px;
+	margin: -2.5% 0px 0px 0px;
 	text-align: center;
 	color: #202020;
 }
@@ -111,3 +112,42 @@ nav img{
   margin: 0px 0px 4% 0px;
   font-weight: bold;
 }
+
+/*- footer Start --------------------------------------------------------------------------*/
+.footer{
+	height: 7vh;
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+	background: #141414;
+}
+/*---------------------------------------------------------------------------- footer End -*/
+
+/*- Mobile Compatibility Start ------------------------------------------------------------*/
+
+@media screen and (max-width: 912px) {
+
+	nav img{
+		width: 110px;
+	}
+	.nav-links ul li a{
+  	color: #000;
+  	text-decoration: none;
+  	font-size: 12px;
+	}
+
+	.error h1{
+		letter-spacing: 0px;
+	}
+
+	.error{
+		margin: 45% 0px;
+		text-align: center;
+		color: #202020;
+	}
+	
+	.error p{
+  	margin: 0px 0px 30px 0px;
+	}
+
+/*-------------------------------------------------------------- Mobile Compatibility End -*/
