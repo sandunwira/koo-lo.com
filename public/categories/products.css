@@ -33,7 +33,7 @@ html, body{
 /*- hoodies Start ------------------------------------------------------------*/
 .hoodies-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/hoodies/hoodies-bg.webp');
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/hoodies/bg/hoodies-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -46,7 +46,7 @@ html, body{
 /*- trousers Start -----------------------------------------------------------*/
 .trousers-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/trousers/trousers-bg.webp');
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/trousers/bg/trousers-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -59,7 +59,7 @@ html, body{
 /*- tshirts Start ------------------------------------------------------------*/
 .tshirts-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/tshirts/tshirts-bg.webp');
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/tshirts/bg/tshirts-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -86,7 +86,7 @@ html, body{
 /*- jeans Start --------------------------------------------------------------*/
 .jeans-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/jeans/jeans-bg.webp');
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/jeans/bg/jeans-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -99,7 +99,7 @@ html, body{
 /*- dresses Start ------------------------------------------------------------*/
 .dresses-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/dresses/dresses-bg.webp');
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/dresses/bg/dresses-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -112,7 +112,7 @@ html, body{
 /*- skirts Start -------------------------------------------------------------*/
 .skirts-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/skirts/skirts-bg.webp');
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/skirts/bg/skirts-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -125,7 +125,7 @@ html, body{
 /*- tops Start ---------------------------------------------------------------*/
 .tops-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/tops/tops-bg.webp');
+	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/tops/bg/tops-bg.webp');
 	background-size: cover;
 	text-align: center;
 }

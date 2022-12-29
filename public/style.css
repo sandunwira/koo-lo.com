@@ -147,7 +147,7 @@ nav img{
 	margin: 5px 5px 10px 5px;
 	padding: 5px 10px;
 	font-weight: bold;
-	color: #1f59ec;
+	color: #fff;
 	background: transparent;
 	border: 2px solid #1f59ec;
 	border-radius: 15px;
@@ -178,7 +178,7 @@ nav img{
 .newsletter{
 	padding: 25px 0px;
 	text-align: center;
-	height: 20vh;
+	height: 25vh;
 	background: #1d293c;
 	display: flex;
   justify-content: center;
@@ -191,25 +191,32 @@ nav img{
 	color: #fff;
 }
 .form-box input{
+	width: 70%;
 	padding: 15px 20px 15px 20px;
+	background: #f5f5f5;
 	border: 1px solid #fff;
 	border-radius: 20px 0px 0px 20px;
+	outline: none;
+}
+.form-box input:focus{
+	background: #fff;
+	border: 1px solid #1f59ec;
 }
 .form-box button{
 	font-weight: bold;
-	background: #1f59ec;
+	background: #000;
 	color: #fff;
 	margin: 0px 0px 0px -6px;
 	padding: 15px 20px 15px 20px;
-	border: 1px solid #1f59ec;
+	border: 1px solid #000;
 	border-radius: 0px 20px 20px 0px;
 	cursor: pointer;
 	transition: 0.5s;
 }
 .form-box button:hover{
-	background: #4372ea;
+	background: #1f59ec;
 	color: #fff;
-	border: 1px solid #4372ea;
+	border: 1px solid #1f59ec;
 	transition: 0.5s;
 }
 /*------------------------------------------------------------------------ newsletter End -*/
@@ -291,16 +298,19 @@ nav img{
 	.cat-card button{
 		font-size: 10px;
 	}
-	
+
+	.newsletter{
+		height: 20vh;
+	}
 	.form-box p{
 		font-size: 15px;
 	}
 	.form-box input{
-		padding: 5px 10px 5px 10px;
+		padding: 10px 10px 10px 10px;
 	}
 	.form-box button{
 		margin: 0px 0px 0px -6px;
-		padding: 5px 10px 5px 10px;
+		padding: 10px 10px 10px 10px;
 		border-radius: 0px 20px 20px 0px;
 	}
 
