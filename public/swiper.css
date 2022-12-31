@@ -45,15 +45,15 @@
   height: 200px;
   width: 95%;
   border-radius: 15px;
-  background: #1f59ec;
+  background: #ffffff;
 }
 
 .deals-content section .card .image img{
   height: 100%;
-  width: 100%;
+  width: auto;
   object-fit: cover;
   border-radius: 15px;
-  border: 3px solid #1f59ec;
+  border: 3px solid #000000;
 }
 
 .deals-content .card .name-price{
@@ -76,24 +76,26 @@
 
 .deals-content .card .button{
   width: 100%;
-  margin-top: 20px;
+	height: auto;
+  margin-top: 15px;
 }
 
-.deals-content .card .button button{
+.deals-content .card .button .offer-btn{
 	font-weight: bold;
   text-decoration: none;
 	padding: 5px 10px;
-	border: 2px solid #1f59ec;
+	border: 2px solid #000;
 	border-radius: 15px;
-	color: #1f59ec;
-	background: transparent;
+	color: #fff;
+	background: #000;
 	cursor: pointer;
 	transition: 0.5s;
 }
 
-.deals-content .button button:hover{
+.deals-content .button .offer-btn:hover{
   color: #e0e0e0;
 	background: #1f59ec;
+	border: 2px solid #1f59ec;
 	transition: 0.5s;
 }
 
@@ -108,9 +110,29 @@
 	color: #1f59ec;
 }
 
-
-.deals-content .card .button button img{
-	height: 10px;
+.deals-content .card .button .ebay{
+  color: #93c5fb;
+	transition: 0.5s;
+}
+.deals-content .card .button:hover .ebay{
+  color: #fff;
+	transition: 0.5s;
+}
+.deals-content .card .button .ali{
+  color: #FF6A00;
+	transition: 0.5s;
+}
+.deals-content .card .button:hover .ali{
+  color: #fff;
+	transition: 0.5s;
+}
+.deals-content .card .button .amazon{
+  color: #FF9900;
+	transition: 0.5s;
+}
+.deals-content .card .button:hover .amazon{
+  color: #fff;
+	transition: 0.5s;
 }
 
 .deals-content .swiper-pagination{
@@ -128,6 +150,7 @@
 .deals-content .swiper-button-next, .swiper-button-prev{
   opacity: 0.7;
   color: #000;
+	z-index: 150;
   transition: all 0.3s ease;
 }
 .deals-content .swiper-button-next:hover, .swiper-button-prev:hover{
@@ -141,6 +164,4 @@
   	width: 70vw;
 	}
 
-	
-	
 }

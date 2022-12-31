@@ -1,12 +1,10 @@
 /*- Importing Fonts Start -----------------------------------------------------------------*/
-
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 @font-face {
   font-family: 'OriginTech';
   src: url('/fonts/Origin-Tech.ttf')  format('truetype');
 }
-
 /*------------------------------------------------------------------- Importing Fonts End -*/
 
 
@@ -22,32 +20,51 @@ html, body{
 	scroll-behavior: smooth;
 	background-color: #dcdcdc;
 	color: #202020;
+	position: relative;
 }
 
 
-/*- header Start ---------- #e0e0e0 ----------------------------------------------------------------*/
+/* ===== Scrollbar CSS ===== */
+*::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ababab;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #8f8f8f;
+}
+*::-webkit-scrollbar-thumb:active {
+	background-color: #7a7a7a;
+}
 
+
+/*- header Start --------------------------------------------------------------------------*/
 .header{
 	height: 90vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/banner.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/banner.webp');
   background-size: cover;
 	text-align: center;
 }
 
 .header-txt{
-	margin-top: 25vh;
+	margin-top: 23vh;
 	font-weight: bold;
 }
 
 .header-txt h1{
 	font-family: 'OriginTech', sans-serif;
-	font-size: 100px;
+	font-size: 150px;
 }
 
 .header-txt h2{
-	font-size: 30px;
+	font-size: 40px;
 }
-/*- Navigation Menu Start -----------------------------------------------------------------*/
+/*- Navigation Menu Start ---------------------------------------------*/
 nav{
 	top: 0;
   left: 0;
@@ -75,12 +92,11 @@ nav img{
   text-decoration: none;
   font-size: 16px;
 }
-
 .nav-links ul li::after{
   content: '';
   width: 0%;
   height: 2px;
-  background: #1f59ec;
+  background: #000000;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -88,8 +104,11 @@ nav img{
 .nav-links ul li:hover::after{
   width: 100%;
 }
-/*------------------------------------------------------------------- Navigation Menu End -*/
 
+.hamburger-menu{
+	display: none;
+}
+/*----------------------------------------------- Navigation Menu End -*/
 /*---------------------------------------------------------------------------- header End -*/
 
 
@@ -100,7 +119,6 @@ nav img{
 	background: #dcdcdc;
 	color: #000;
 }
-
 .deals h1{
 	font-weight: bold;
 	margin: 1% 0px -1% 0%;
@@ -148,8 +166,8 @@ nav img{
 	padding: 5px 10px;
 	font-weight: bold;
 	color: #fff;
-	background: transparent;
-	border: 2px solid #1f59ec;
+	background: #000;
+	border: 2px solid #000;
 	border-radius: 15px;
 	cursor: pointer;
 	transition: 0.5s;
@@ -157,13 +175,14 @@ nav img{
 .cat-card button:hover{
 	color: #fff;
 	background: #1f59ec;
+	border: 2px solid #1f59ec;
 	transition: 0.5s;
 }
 
 .cat-card img{
 	width: 225px;
 	height: 245px;
-	border: 3px solid #1f59ec;
+	border: 3px solid #000;
 	border-radius: 10px 10px 0px 0px;
 	object-fit: cover;
 }
@@ -232,28 +251,144 @@ nav img{
 /*---------------------------------------------------------------------------- footer End -*/
 
 
+/*- scroll-container Start ----------------------------------------------------------------*/
+.scroll-container {
+	margin-right: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+	z-index: 140;
+}
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+.scroll-container a {
+  position: sticky;
+  top: 95vh;
+  cursor: pointer;
+  font-size: 20px;
+}
+.scroll-container i {
+	text-shadow: 0 0 5px #9c9c9c;
+	font-size: 40px;
+	color: #fff;
+}
+/*------------------------------------------------------------------ scroll-container End -*/
+
+
+
 /*- Mobile Compatibility Start ------------------------------------------------------------*/
-
 @media screen and (max-width: 912px) {
-
+	
 	h1{
 		font-size: 25px;
 	}
 	
-	nav img{
-		width: 100px;
+	.desk-menu{
+		display: none;
 	}
-	.nav-links ul li a{
-  	color: #000;
-  	text-decoration: none;
-  	font-size: 12px;
+
+	/*- Hamburger Menu Start --------------------------------------------*/
+	.hamburger-menu {
+  	position: sticky;
+  	display: block;
+  	z-index: 200;
+  	text-align: left;
 	}
+	#menuToggle{
+		width: fit-content;
+		display: block;
+		position: relative;
+		top: 40px;
+		left: 30px;
+		z-index: 1;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	#menuToggle a{
+		text-decoration: none;
+		color: #232323;
+		transition: color 0.3s ease;
+	}
+	#menuToggle a:hover{
+		color: #1f59ec;
+	}
+	#menuToggle input{
+		display: block;
+		width: 40px;
+		height: 32px;
+		position: absolute;
+		top: -7px;
+		left: -5px;
+		cursor: pointer;
+		opacity: 0;
+		z-index: 2;
+		-webkit-touch-callout: none;
+	}
+	#menuToggle span{
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin-bottom: 5px;
+		position: relative;
+		background: #000000;
+		border-radius: 3px;
+		z-index: 1;
+		transform-origin: 4px 0px;
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+	}
+	#menuToggle span:first-child{
+		transform-origin: 0% 0%;
+	}
+	#menuToggle span:nth-last-child(2){
+		transform-origin: 0% 100%;
+	}
+	#menuToggle input:checked ~ span{
+		opacity: 1;
+		transform: rotate(45deg) translate(-2px, -1px);
+		background: #232323;
+	}
+	#menuToggle input:checked ~ span:nth-last-child(3){
+		opacity: 0;
+		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+	#menuToggle input:checked ~ span:nth-last-child(2){
+		transform: rotate(-45deg) translate(0, -1px);
+	}
+	#menu{
+		position: absolute;
+		height: 120vh;
+		width: 412px;
+		margin: -85px 0 0 -49px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+	#menu li{
+		padding: 10px 0;
+		font-size: 22px;
+	}
+	#menuToggle input:checked ~ ul{
+		transform: none;
+	}
+	/*---------------------------------------------- Hamburger Menu End -*/
 	
 	.header{
 		height: 30vh;
 	}
 	.header-txt{
-		margin-top: 5vh;
+		margin-top: 7vh;
 		font-weight: bold;
 	}
 	.header .header-txt h1{
@@ -315,7 +450,4 @@ nav img{
 	}
 
 }
-
-
 /*-------------------------------------------------------------- Mobile Compatibility End -*/
-

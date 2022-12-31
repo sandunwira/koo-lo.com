@@ -14,14 +14,35 @@ html, body{
 	scroll-behavior: smooth;
 	background-color: #dcdcdc;
 	color: #202020;
+	position: relative;
 }
+
+
+/* ===== Scrollbar CSS ===== */
+*::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ababab;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #8f8f8f;
+}
+*::-webkit-scrollbar-thumb:active {
+	background-color: #7a7a7a;
+}
+
 
 /*- men and women header Start ------------------------------------------------------------*/
 
 /*- mens Start ---------------------------------------------------------------------*/
 .m-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/mens.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/mens.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -33,7 +54,7 @@ html, body{
 /*- hoodies Start ------------------------------------------------------------*/
 .hoodies-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/hoodies/bg/hoodies-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/mens/hoodies/bg/hoodie-guy-4k-nf-1920x1080.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -46,7 +67,7 @@ html, body{
 /*- trousers Start -----------------------------------------------------------*/
 .trousers-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/trousers/bg/trousers-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/mens/trousers/bg/trousers-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -59,7 +80,7 @@ html, body{
 /*- tshirts Start ------------------------------------------------------------*/
 .tshirts-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/mens/tshirts/bg/tshirts-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/mens/tshirts/bg/tshirts-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -74,7 +95,7 @@ html, body{
 /*- womens Start -------------------------------------------------------------------*/
 .w-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/womens.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/womens.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -86,7 +107,7 @@ html, body{
 /*- jeans Start --------------------------------------------------------------*/
 .jeans-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/jeans/bg/jeans-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/womens/jeans/bg/jeans-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -99,7 +120,7 @@ html, body{
 /*- dresses Start ------------------------------------------------------------*/
 .dresses-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/dresses/bg/dresses-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/womens/dresses/bg/dresses-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -112,7 +133,7 @@ html, body{
 /*- skirts Start -------------------------------------------------------------*/
 .skirts-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/skirts/bg/skirts-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/womens/skirts/bg/skirts-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -125,7 +146,7 @@ html, body{
 /*- tops Start ---------------------------------------------------------------*/
 .tops-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffffB3, #ffffffB3), url('/images/products/womens/tops/bg/tops-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/womens/tops/bg/tops-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -137,17 +158,19 @@ html, body{
 /*----------------------------------------------------------------- tops End -*/
 /*--------------------------------------------------------------------- womens End -*/
 
-/*- Navigation Menu Start -----------------------------------------------------------------*/
+/*- Navigation Menu Start ---------------------------------------------*/
 nav{
+	top: 0;
+  left: 0;
   display: flex;
   padding: 2% 2%;
   justify-content: space-between;
   align-items: center;
 }
 nav img{
+	display: none;
   width: 150px;
 }
-
 .nav-links{
   flex: 1;
   text-align: right;
@@ -167,7 +190,7 @@ nav img{
   content: '';
   width: 0%;
   height: 2px;
-  background: #1f59ec;
+  background: #000000;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -175,9 +198,78 @@ nav img{
 .nav-links ul li:hover::after{
   width: 100%;
 }
-/*------------------------------------------------------------------- Navigation Menu End -*/
+
+.hamburger-menu{
+	display: none;
+}
+/*----------------------------------------------- Navigation Menu End -*/
 
 /*-------------------------------------------------------------- men and women header End -*/
+/*- cat Start -------------------------------------------------------------------------*/
+.top-cat{
+	text-align: center;
+	padding: 15px 20px 40px 20px;
+	color: #000;
+}
+.top-cat h1{
+	margin: 10px 0px 10px 0px;
+}
+
+.cat-items{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-card{
+	display: flex;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+	margin: 10px 15px;
+	height: 350px;
+	width: 255px;
+	border-radius: 15px;
+	color: #000;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.cat-card:hover{
+	scale: 1.02;
+	box-shadow: 0 0 2px #424242, 0 0 15px #424242;
+	transition: 0.3s;
+}
+
+.cat-card button{
+	margin: 5px 5px 10px 5px;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #fff;
+	background: #000;
+	border: 2px solid #000;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.cat-card button:hover{
+	color: #fff;
+	background: #1f59ec;
+	border: 2px solid #1f59ec;
+	transition: 0.5s;
+}
+
+.cat-card img{
+	width: 225px;
+	height: 245px;
+	border: 3px solid #000;
+	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
+}
+
+.cat-card-content{
+	padding: 10px;
+}
+/*--------------------------------------------------------------------------- cat End -*/
 
 
 /*- products Start ------------------------------------------------------------------------*/
@@ -217,16 +309,29 @@ nav img{
 	margin: 5px 5px;
 	padding: 5px 10px;
 	font-weight: bold;
-	color: #1f59ec;
-	background: transparent;
-	border: 2px solid #1f59ec;
-	border-radius: 15px;
+	color: #fff;
+	background: #000;
+	border: 2px solid #000;
+	border-radius: 10px;
 	cursor: pointer;
 	transition: 0.5s;
 }
 .card button:hover{
 	color: #fff;
 	background: #1f59ec;
+	border: 2px solid #1f59ec;
+	transition: 0.5s;
+}
+.card button .ebay{
+	color: #93c5fb;
+	transition: 0.5s;
+}
+.card button:hover .ebay{
+	color: #fff;
+	transition: 0.5s;
+}
+.card button .ali{
+	color: #FF6A00;
 	transition: 0.5s;
 }
 
@@ -240,30 +345,6 @@ nav img{
 
 .card-content{
 	padding: 10px;
-}
-
-.see-more{
-	display: flex;
-	text-align: center;
-	align-items: center;
-  justify-content: center;
-	margin: 10px 20px;
-	height: 300px;
-	width: 225px;
-	background-color: transparent;
-}
-.see-more-content{
-	padding: 10px;
-}
-.see-more a{
-	color: #1f59ec;
-	text-decoration: none;
-	font-weight: bold;
-	transition: 0.3s;
-}
-.see-more a:hover{
-	color: #1443b8;
-	transition: 0.3s;
 }
 /*-------------------------------------------------------------------------- products End -*/
 
@@ -365,20 +446,27 @@ nav img{
 }
 
 .products-card .content .details button .ebay{
-  color: #0064D2;
+  color: #93c5fb;
 	transition: 0.5s;
 }
+
 .products-card .content .details button:hover .ebay{
   color: #fff;
 	transition: 0.5s;
 }
 
+
 .products-card .content .details button .ali{
   color: #FF6A00;
 	transition: 0.5s;
 }
+
 .products-card .content .details button:hover .ali{
   color: #fff;
+	transition: 0.5s;
+}
+.card button:hover .ali{
+	color: #fff;
 	transition: 0.5s;
 }
 
@@ -386,20 +474,28 @@ nav img{
   color: #FF9900;
 	transition: 0.5s;
 }
+.card button .amazon{
+	color: #FF9900;
+	transition: 0.5s;
+}
 .products-card .content .details button:hover .amazon{
   color: #fff;
+	transition: 0.5s;
+}
+.card button:hover .amazon{
+	color: #fff;
 	transition: 0.5s;
 }
 
 .products-card .content .details button{
 	margin: 10px 0px;
 	padding: 7px 15px;
-  border: 2px solid #1f59ec;
+  border: 2px solid #000;
   border-radius: 15px;
   font-size: 13px;
   font-weight: bold;
-  background-color: transparent;
-  color: #1f59ec;
+  background-color: #000;
+  color: #fff;
   cursor: pointer;
 	transition: 0.5s;
 }
@@ -407,6 +503,7 @@ nav img{
 	scale: 1.05;
 	color: #fff;
 	background: #1f59ec;
+  border: 2px solid #1f59ec;
 	box-shadow: 0 0 5px #42424290;
 	transition: 0.5s;
 }
@@ -423,45 +520,163 @@ nav img{
 /*---------------------------------------------------------------------------- footer End -*/
 
 
+/*- scroll-container Start ----------------------------------------------------------------*/
+.scroll-container {
+	margin-right: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+	z-index: 200;
+}
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+.scroll-container a {
+  position: sticky;
+  top: 95vh;
+  cursor: pointer;
+  font-size: 20px;
+}
+.scroll-container i {
+	text-shadow: 0 0 5px #9c9c9c;
+	font-size: 40px;
+	color: #fff;
+}
+/*------------------------------------------------------------------ scroll-container End -*/
+
+
+
 /*- Mobile Compatibility Start ------------------------------------------------------------*/
 
 @media screen and (max-width: 912px) {
 
-	nav img{
-		width: 100px;
+	.desk-menu{
+		display: none;
 	}
-	.nav-links ul li a{
-  	color: #000;
-  	text-decoration: none;
-  	font-size: 12px;
+
+	/*- Hamburger Menu Start --------------------------------------------*/
+	.hamburger-menu {
+  	position: sticky;
+  	display: block;
+  	z-index: 200;
+  	text-align: left;
 	}
+	#menuToggle{
+		width: fit-content;
+		display: block;
+		position: relative;
+		top: 40px;
+		left: 30px;
+		z-index: 1;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	#menuToggle a{
+		text-decoration: none;
+		color: #232323;
+		transition: color 0.3s ease;
+	}
+	#menuToggle a:hover{
+		color: #1f59ec;
+	}
+	#menuToggle input{
+		display: block;
+		width: 40px;
+		height: 32px;
+		position: absolute;
+		top: -7px;
+		left: -5px;
+		cursor: pointer;
+		opacity: 0;
+		z-index: 2;
+		-webkit-touch-callout: none;
+	}
+	#menuToggle span{
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin-bottom: 5px;
+		position: relative;
+		background: #000000;
+		border-radius: 3px;
+		z-index: 1;
+		transform-origin: 4px 0px;
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+	}
+	#menuToggle span:first-child{
+		transform-origin: 0% 0%;
+	}
+	#menuToggle span:nth-last-child(2){
+		transform-origin: 0% 100%;
+	}
+	#menuToggle input:checked ~ span{
+		opacity: 1;
+		transform: rotate(45deg) translate(-2px, -1px);
+		background: #232323;
+	}
+	#menuToggle input:checked ~ span:nth-last-child(3){
+		opacity: 0;
+		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+	#menuToggle input:checked ~ span:nth-last-child(2){
+		transform: rotate(-45deg) translate(0, -1px);
+	}
+	#menu{
+		position: absolute;
+		height: 120vh;
+		width: 412px;
+		margin: -85px 0 0 -49px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+	#menu li{
+		padding: 10px 0;
+		font-size: 22px;
+	}
+	#menuToggle input:checked ~ ul{
+		transform: none;
+	}
+	/*---------------------------------------------- Hamburger Menu End -*/
 	
 	.m-header{
 		height: 30vh;
 	}
 	.m-header h1{
-		margin-top: 5vh;
-  	font-size: calc(10vw + 5px);
+		margin-top: 6vh;
+		line-height: 0.9;
+  	font-size: calc(12vw + 5px);
 	}
 	.hoodies-header{
 		height: 30vh;
 	}
 	.hoodies-header h1{
-		margin-top: 5vh;
+		margin-top: 7vh;
   	font-size: calc(10vw + 5px);
 	}
 	.trousers-header{
 		height: 30vh;
 	}
 	.trousers-header h1{
-		margin-top: 5vh;
+		margin-top: 7vh;
   	font-size: calc(10vw + 5px);
 	}
 	.tshirts-header{
 		height: 30vh;
 	}
 	.tshirts-header h1{
-		margin-top: 5vh;
+		margin-top: 7vh;
   	font-size: calc(10vw + 5px);
 	}
 	
@@ -470,34 +685,35 @@ nav img{
 	}
 	.w-header h1{
 		margin-top: 5vh;
-  	font-size: calc(10vw + 5px);
+		line-height: 0.9;
+  	font-size: calc(12vw + 5px);
 	}
 	.jeans-header{
 		height: 30vh;
 	}
 	.jeans-header h1{
-		margin-top: 5vh;
+		margin-top: 7vh;
   	font-size: calc(10vw + 5px);
 	}
 	.dresses-header{
 		height: 30vh;
 	}
 	.dresses-header h1{
-		margin-top: 5vh;
+		margin-top: 7vh;
   	font-size: calc(10vw + 5px);
 	}
 	.skirts-header{
 		height: 30vh;
 	}
 	.skirts-header h1{
-		margin-top: 5vh;
+		margin-top: 7vh;
   	font-size: calc(10vw + 5px);
 	}
 	.tops-header{
 		height: 30vh;
 	}
 	.tops-header h1{
-		margin-top: 5vh;
+		margin-top: 7vh;
   	font-size: calc(10vw + 5px);
 	}
 	
@@ -509,6 +725,9 @@ nav img{
 		text-align: center;
 		font-size: 25px;
 		margin: 5px 0px 0px 0px;
+	}
+	.cat-items{
+		flex-direction: column;
 	}
 	
 	.items{
@@ -553,5 +772,4 @@ nav img{
     flex-direction: column;
 	}
 }
-
 /*-------------------------------------------------------------- Mobile Compatibility End -*/
