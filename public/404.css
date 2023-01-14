@@ -56,7 +56,6 @@ nav{
   align-items: center;
 }
 nav img{
-	display: none;
   width: 150px;
 }
 .nav-links{
@@ -146,8 +145,40 @@ nav img{
 }
 /*---------------------------------------------------------------------------- footer End -*/
 
-/*- Mobile Compatibility Start ------------------------------------------------------------*/
 
+
+@media (prefers-color-scheme: light) {
+	nav .white-logo img{
+		display: none;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.header {
+    background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/VvsTPcbC/404.webp');
+	}
+	
+	nav .black-logo img{
+		display: none;
+	}
+	
+	.nav-links ul li a {
+    color: #f0f0f0;
+	}
+	.nav-links ul li::after {
+    background: #f0f0f0;
+	}
+
+	.error {
+    color: #f0f0f0;
+	}
+	
+}
+
+
+
+/*- Mobile Compatibility Start ------------------------------------------------------------*/
 @media screen and (max-width: 912px) {
 
 	.desk-menu{

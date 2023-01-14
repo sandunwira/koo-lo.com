@@ -158,10 +158,49 @@
   color: #2e2e2e;
 }
 
+
+
+
+@media (prefers-color-scheme: dark) {
+	.deals-content {
+    background: #272727;
+    color: #f0f0f0;
+	}
+	.deals-content .card {
+    background: #464646;
+	}
+	.deals-content .card .button a {
+    color: #f0f0f0;
+	}
+	.deals-content .card .button a:hover {
+    color: #a5bfff;
+	}
+	.deals-content section .card .image {
+    background: #464646;
+	}
+	.deals-content .swiper-pagination-bullet {
+    background: #f0f0f0;
+	}
+	.deals-content .swiper-button-next, .swiper-button-prev {
+    color: #fff;
+	}
+	.deals-content .swiper-button-next:hover, .swiper-button-prev:hover {
+    opacity: 0.5;
+    color: #fff;
+	}
+}
+
+
+
+
 @media screen and (max-width: 912px) {
 
 	.deals-content .swiper{
   	width: 70vw;
+	}
+
+	.deals-content .swiper-pagination-bullet {
+    width: 20px;
 	}
 
 }

@@ -42,7 +42,7 @@ html, body{
 /*- mens Start ---------------------------------------------------------------------*/
 .m-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/mens.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/KcQwr4dr/mens.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -54,7 +54,7 @@ html, body{
 /*- hoodies Start ------------------------------------------------------------*/
 .hoodies-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/mens/hoodies/bg/hoodie-guy-4k-nf-1920x1080.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/ry00ktMQ/hoodie-guy-4k-nf-1920x1080.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -67,7 +67,7 @@ html, body{
 /*- trousers Start -----------------------------------------------------------*/
 .trousers-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/mens/trousers/bg/trousers-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/MpXgPxyM/trousers-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -80,7 +80,7 @@ html, body{
 /*- tshirts Start ------------------------------------------------------------*/
 .tshirts-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/mens/tshirts/bg/tshirts-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/mk86j6ky/tshirts-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -95,7 +95,7 @@ html, body{
 /*- womens Start -------------------------------------------------------------------*/
 .w-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/womens.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/Wb3K9TVR/womens.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -107,7 +107,7 @@ html, body{
 /*- jeans Start --------------------------------------------------------------*/
 .jeans-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/womens/jeans/bg/jeans-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/NFzk5hLS/jeans-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -120,7 +120,7 @@ html, body{
 /*- dresses Start ------------------------------------------------------------*/
 .dresses-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/womens/dresses/bg/dresses-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/dQ4WzpQ8/dresses-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -133,7 +133,7 @@ html, body{
 /*- skirts Start -------------------------------------------------------------*/
 .skirts-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/womens/skirts/bg/skirts-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/htq7MPFM/skirts-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -146,7 +146,7 @@ html, body{
 /*- tops Start ---------------------------------------------------------------*/
 .tops-header{
 	height: 50vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/products/womens/tops/bg/tops-bg.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/xC7Xm9yv/tops-bg.webp');
 	background-size: cover;
 	text-align: center;
 }
@@ -167,9 +167,11 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-nav img{
-	display: none;
+nav .black-logo img{
   width: 150px;
+}
+nav .white-logo img{
+	width: 150px;
 }
 .nav-links{
   flex: 1;
@@ -190,7 +192,7 @@ nav img{
   content: '';
   width: 0%;
   height: 2px;
-  background: #000000;
+  background: #1f59ec;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -550,8 +552,119 @@ nav img{
 
 
 
-/*- Mobile Compatibility Start ------------------------------------------------------------*/
+@media (prefers-color-scheme: light) {
+	nav .white-logo img{
+		display: none;
+	}
+}
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #272727;
+    color: #f0f0f0;
+  }
+
+	nav .black-logo img{
+		display: none;
+	}
+	
+	.nav-links ul li a {
+    color: #f0f0f0;
+	}
+	.nav-links ul li::after {
+    background: #f0f0f0;
+	}
+	
+	.m-header {
+    background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/KcQwr4dr/mens.webp');
+	}
+	.m-header h1 {
+    color: #f0f0f0;
+	}
+	
+	.hoodies-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/ry00ktMQ/hoodie-guy-4k-nf-1920x1080.webp');
+	}
+	.hoodies-header h1{
+		color: #f0f0f0;
+	}
+	
+	.trousers-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/MpXgPxyM/trousers-bg.webp');
+	}
+	.trousers-header h1{
+		color: #f0f0f0;
+	}
+	
+	.tshirts-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/mk86j6ky/tshirts-bg.webp');
+	}
+	.tshirts-header h1{
+		color: #f0f0f0;
+	}
+	
+	.w-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/Wb3K9TVR/womens.webp');
+	}
+	.w-header h1{
+		color: #f0f0f0;
+	}
+	
+	.jeans-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/NFzk5hLS/jeans-bg.webp');
+	}
+	.jeans-header h1{
+		color: #f0f0f0;
+	}
+	
+	.dresses-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/dQ4WzpQ8/dresses-bg.webp');
+	}
+	.dresses-header h1{
+		color: #f0f0f0;
+	}
+	
+	.skirts-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/htq7MPFM/skirts-bg.webp');
+	}
+	.skirts-header h1{
+		color: #f0f0f0;
+	}
+	
+	.tops-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/xC7Xm9yv/tops-bg.webp');
+	}
+	.tops-header h1{
+		color: #f0f0f0;
+	}
+
+	
+	.top-cat {
+    background: #272727;
+	}
+	.cat-card {
+    color: #f0f0f0;
+    background-color: #464646;
+	}
+
+	.products-row {
+    background: linear-gradient(#27272780, #27272780);
+	}
+	.products-card {
+    background: #464646;
+	}
+	.products-card .content .details h2 {
+    color: #f0f0f0;
+	}
+	.products-card .content .details .data h3 {
+    color: #f0f0f0;
+	}
+}
+
+
+
+
+/*- Mobile Compatibility Start ------------------------------------------------------------*/
 @media screen and (max-width: 912px) {
 
 	.desk-menu{
