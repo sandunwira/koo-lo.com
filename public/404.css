@@ -43,7 +43,7 @@ html, body{
 
 .header{
 	height: 93vh;
-	background-image: linear-gradient(#ffffff80, #ffffff80), url('/images/404.webp');
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/VvsTPcbC/404.webp');
   background-size: cover;
 }
 /*- Navigation Menu Start ---------------------------------------------*/
